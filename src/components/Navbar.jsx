@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/Logo.png'
 import { Menu, X, House, Info, CircleUserRound   } from 'lucide-react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
