@@ -36,13 +36,13 @@ const Navbar = () => {
         {/* Mobile burger menu */}
         <div className='md:hidden flex items-center'>
           <button className='cursor-pointer transition-all duration-500'
-          onClick={() => setMenuOpen(true)}><Menu size={30} />
+          onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={35} /> : <Menu size={35} />}
           </button>
         </div>
 
 
             <div
-                className={`md:hidden fixed top-0 right-0 w-full h-screen bg-white text-black
+                className={`md:hidden fixed top-15 right-0 w-full h-[55%] bg-slate-100 rounded-b-xl text-slate-900
                 transform transition-all duration-300 ease-in-out z-50
                 ${
                   menuOpen
@@ -53,29 +53,18 @@ const Navbar = () => {
 
                 {/* Header */}
 
-                <div className="flex justify-between items-center p-4 border-b border-gray-300">
-
-                  <Link to="/" onClick={() => setMenuOpen(false)}>
-                    <img src={logo} alt="Logo" className="h-9 invert" />
-                  </Link>
-
-                  <button
-                    onClick={() => setMenuOpen(false)}
-                    className="cursor-pointer text-gray-500 hover:text-black transition"
-                  >
-                    <X size={36} />
-                  </button>
+                <div className="flex justify-between items-center">
 
                 </div>
 
                 {/* Links */}
 
-                <div className="flex flex-col px-6 py-6">
+                <div className="flex flex-col px-5 font-medium gap-5 mt-5">
 
                   <Link
                     to="/"
                     onClick={() => setMenuOpen(false)}
-                    className="border-b border-gray-200 py-5 text-lg hover:text-gray-900 transition"
+                    className="border-gray-200 text-lg hover:text-gray-500 transition"
                   >
                     Home
                   </Link>
@@ -83,7 +72,7 @@ const Navbar = () => {
                   <Link
                     to="/about"
                     onClick={() => setMenuOpen(false)}
-                    className="border-b border-gray-200 py-5 text-lg hover:text-gray-900 transition"
+                    className="border-gray-200 text-lg hover:text-gray-500 transition"
                   >
                     About
                   </Link>
@@ -91,7 +80,7 @@ const Navbar = () => {
                   <Link
                     to="/services"
                     onClick={() => setMenuOpen(false)}
-                    className="border-b border-gray-200 py-5 text-lg hover:text-gray-900 transition"
+                    className="border-gray-200 text-lg hover:text-gray-500 transition"
                   >
                     Services
                   </Link>
@@ -99,7 +88,7 @@ const Navbar = () => {
                   <Link
                     to="/projects"
                     onClick={() => setMenuOpen(false)}
-                    className="border-b border-gray-200 py-5 text-lg hover:text-gray-900 transition"
+                    className="border-gray-200 text-lg hover:text-gray-500 transition"
                   >
                     Projects
                   </Link>
@@ -107,7 +96,7 @@ const Navbar = () => {
                   <Link
                     to="/blog"
                     onClick={() => setMenuOpen(false)}
-                    className="border-b border-gray-200 py-5 text-lg hover:text-gray-900 transition"
+                    className="border-gray-200 text-lg hover:text-gray-500 transition"
                   >
                     Blog
                   </Link>
@@ -115,7 +104,7 @@ const Navbar = () => {
                   <Link
                     to="/contact"
                     onClick={() => setMenuOpen(false)}
-                    className="border-b border-gray-200 py-5 text-lg hover:text-gray-900 transition"
+                    className="border-gray-200 text-lg hover:text-gray-500 transition"
                   >
                     Contact
                   </Link>
@@ -124,11 +113,11 @@ const Navbar = () => {
 
                 {/* Button */}
 
-                <div className="px-6 mt-auto pb-10">
+                <div className="px-4 mt-3">
 
                   <Link to="/projects" onClick={() => setMenuOpen(false)}>
 
-                    <button className="w-full bg-slate-900 text-white py-4 rounded-xl font-semibold hover:bg-slate-950 transition active:scale-95 cursor-pointer">
+                    <button className="w-35 bg-slate-900 text-white py-3 rounded-xl font-semibold hover:bg-slate-950 transition active:scale-95 cursor-pointer">
 
                       Explore More
 

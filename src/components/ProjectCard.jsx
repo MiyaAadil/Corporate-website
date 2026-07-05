@@ -2,11 +2,11 @@ import React from 'react'
 
 const ProjectCard = ({title, category, image}) => {
   return (
-    <div className='h-90 flex flex-col bg-gray-400 p-3 rounded-4xl cursor-pointer hover:translate-y-1 transition-all duration-300 shadow-xl relative overflow-hidden group-hover:scale-105'>
+    <div className='h-90 flex flex-col border border-gray-200 p-3 rounded-4xl cursor-pointer hover:translate-y-2 transition-all duration-300 shadow-xl hover:shadow-2xl relative overflow-hidden group'>
 
-    <img className='h-full object-cover rounded-4xl absolute inset-0 w-full p-2' src={image} alt="" />
+    <img className='h-full object-cover rounded-4xl absolute inset-0 w-full p-2 group-hover:scale-110 transition-transform duration-500' src={image} alt="" />
 
-      <div className='bg-black/50 backdrop-blur-xs p-3 w-full flex absolute bottom-0 right-0 flex-col gap-2 text-white'>
+      <div className='bg-black/40 backdrop-blur-xs p-3 w-full flex absolute bottom-0 right-0 flex-col gap-2 text-white'>
 
         <h2 className='text-2xl font-medium leading-5'>{title}</h2>
 
