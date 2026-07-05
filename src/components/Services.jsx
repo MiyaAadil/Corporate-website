@@ -9,7 +9,7 @@ const Services = () => {
       <p className='text-md text-gray-500'>We provide digital solutions
       for modern businesses.</p>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {services.map((service) => (
             <ServiceCard key={service.id} title={service.title} description={service.description} icon={service.icon} />
         ))}

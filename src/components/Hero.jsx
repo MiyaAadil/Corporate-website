@@ -1,4 +1,5 @@
 import Corporate from '../assets/images/corporate.jpg'
+import Tech from '../assets/images/tech.jpg'
 
 const Hero = () => {
   return (
@@ -18,12 +19,12 @@ const Hero = () => {
 
         <div className='mt-4 relative flex justify-center'>
 
-          <img className='rounded-2xl h-100 w-full object-cover' src={Corporate} alt="corporate image" />
+          <img className='rounded-2xl h-100 w-full object-cover' src={Tech} alt="corporate image" />
 
           <p className='absolute bottom-0 rounded-2xl p-4 text-white bg-black/20 backdrop-blur m-5'>Our mission is to redefine skylines through precision engineering, smart design and sustainable construction practices.</p>
         </div>
 
-        <div className='mt-4 grid grid-cols-1 gap-3
+        <div className='mt-4 grid grid-cols-1 gap-3 text-center
                         md:grid-cols-3'>
 
           <div className='bg-gray-950 text-white rounded-2xl p-4'>
