@@ -5,7 +5,7 @@ import Project3 from '../assets/images/AiAnalytics.avif'
 export const projects = [
     {
         id: 1,
-        title: "NovaBank Dashboard",
+        title: "Bank Dashboard",
         category: "Web Development",
         image: Project1,
     }, {

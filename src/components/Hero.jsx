@@ -21,7 +21,7 @@ const Hero = () => {
 
           <img className='rounded-2xl h-100 w-full object-cover' src={Tech} alt="corporate image" />
 
-          <p className='absolute bottom-0 rounded-2xl p-4 text-white bg-black/20 backdrop-blur m-5'>Our mission is to redefine skylines through precision engineering, smart design and sustainable construction practices.</p>
+          <p className='absolute bottom-0 rounded-2xl p-4 text-white bg-black/20 backdrop-blur m-5'>Our mission is to empower businesses through innovative software solutions, cutting-edge technology, and exceptional digital experiences.</p>
         </div>
 
         <div className='mt-4 grid grid-cols-1 gap-3 text-center
@@ -38,8 +38,8 @@ const Hero = () => {
           </div>
 
           <div className='bg-gray-950 text-white rounded-2xl p-4'>
-            <p className='text-3xl font-bold'>310M+</p>
-            <p className='text-xs'>Portfolio value [$]</p>
+            <p className='text-3xl font-bold'>$310K+</p>
+            <p className='text-xs'>Portfolio value</p>
           </div>
         </div>
 

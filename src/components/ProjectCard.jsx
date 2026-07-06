@@ -1,4 +1,3 @@
-import React from 'react'
 
 const ProjectCard = ({title, category, image}) => {
   return (
@@ -8,9 +7,9 @@ const ProjectCard = ({title, category, image}) => {
 
       <div className='bg-black/40 backdrop-blur-xs p-3 w-full flex absolute bottom-0 right-0 flex-col gap-2 text-white'>
 
-        <h2 className='text-2xl font-medium leading-5'>{title}</h2>
+        <h2 className='text-2xl font-medium leading-5 text-center'>{title}</h2>
 
-        <h2 className='text-gray-200 text-xs bg-red-500/90 py-1 px-3 w-35 rounded-full'>{category}</h2>
+        <h2 className='text-gray-200 text-xs bg-red-500/90 py-1 w-30 rounded-md text-center mx-auto'>{category}</h2>
 
         <button className='bg-white hover:bg-slate-200 text-black py-3 rounded-full cursor-pointer font-medium'>View Project</button>
       </div>

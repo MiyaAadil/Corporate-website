@@ -1,14 +1,14 @@
 
 const ServiceCard = ({title, description, icon}) => {
   return (
-    <div className='h-60 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer  relative overflow-hidden '>
+    <div className='h-80 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer  overflow-hidden border border-gray-100'>
       
-      <img className='absolute w-full h-full object-cover inset-0 opacity-70' src={icon} alt="" />
+      <img className='h-40 w-full object-cover p-2 rounded-2xl' src={icon} alt="" />
 
-      <div className='absolute inset-0 bg-black/70 text-white p-4 flex flex-col justify-between gap-3'>
-        <h2 className='text-3xl font-bold'>{title}</h2>
-        <p className=''>{description}</p>
-        <button className='bg-white hover:bg-gray-300 cursor-pointer text-black p-2 rounded-full'>Learn more</button>
+      <div className='p-4 flex flex-col justify-between gap-2.5 items-center'>
+        <h2 className='text-2xl font-semibold'>{title}</h2>
+        <p className='text-sm text-center'>{description}</p>
+        <button className='bg-slate-950 hover:bg-gray-900 text-white cursor-pointer p-2 rounded-full w-35'>Learn more</button>
       </div>
     </div>
   )
