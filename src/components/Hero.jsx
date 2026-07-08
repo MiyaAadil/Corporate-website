@@ -3,14 +3,14 @@ import Tech from '../assets/images/tech.jpg'
 
 const Hero = () => {
   return (
-    <div className='p-5
+    <div className='p-5 dark:text-white
                     lg:max-w-7xl lg:mx-auto'>
 
       {/* Bigger heading and a CTA */}
       <div className='flex flex-col gap-3'>
-        <h1 className='text-4xl lg:text-6xl text-blue-950 font-bold uppercase leading-none'>Inspired by you <br /> built for the future</h1>
-        <p className='text-sm text-gray-500'>We help businesses build innovative digital solutions that accelerate growth, improve efficiency, and create lasting impact.</p>
-        <button className='bg-gray-900 px-3 py-3 rounded-xl text-white w-40 cursor-pointer'>Get started</button>
+        <h1 className='text-4xl lg:text-6xl text-blue-950 font-bold uppercase leading-none dark:text-gray-300'>Inspired by you <br /> built for the future</h1>
+        <p className='text-sm text-gray-500 dark:text-gray-300'>We help businesses build innovative digital solutions that accelerate growth, improve efficiency, and create lasting impact.</p>
+        <button className='bg-gray-900 dark:bg-gray-800 px-3 py-3 rounded-xl text-white w-40 cursor-pointer'>Get started</button>
       </div>
 
 
@@ -27,17 +27,17 @@ const Hero = () => {
         <div className='mt-4 grid grid-cols-1 gap-3 text-center
                         md:grid-cols-3'>
 
-          <div className='bg-gray-950 text-white rounded-2xl p-4'>
+          <div className='bg-gray-950 dark:bg-gray-800 dark:text-gray-300 text-white rounded-2xl p-4'>
             <p className='text-3xl font-bold'>58+</p>
             <p className='text-xs'>Total Projects</p>
           </div>
 
-          <div className='bg-gray-950 text-white rounded-2xl p-4'>
+          <div className='bg-gray-950 dark:bg-gray-800 dark:text-gray-300 text-white rounded-2xl p-4'>
             <p className='text-3xl font-bold'>72</p>
             <p className='text-xs'>Delivered</p>
           </div>
 
-          <div className='bg-gray-950 text-white rounded-2xl p-4'>
+          <div className='bg-gray-950 dark:bg-gray-800 dark:text-gray-300 text-white rounded-2xl p-4'>
             <p className='text-3xl font-bold'>$310K+</p>
             <p className='text-xs'>Portfolio value</p>
           </div>

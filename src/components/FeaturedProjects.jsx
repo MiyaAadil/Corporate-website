@@ -3,9 +3,9 @@ import { projects } from '../data/projects'
 
 const FeaturedProjects = () => {
   return (
-    <div className='flex flex-col gap-2 m-5 lg:max-w-7xl lg:mx-auto'>
-      <h1 className='text-4xl text-slate-900 font-bold mx-auto'>Featured Projects</h1>
-      <p className='text-gray-500 text-sm mx-auto'>Explore some of our recent digital solutions that have helped businesses grow.</p>
+    <div className='flex flex-col gap-4 m-5 lg:max-w-7xl lg:mx-auto py-5'>
+      <h1 className='text-4xl text-slate-900 font-bold mx-auto dark:text-gray-300'>Featured Projects</h1>
+      <p className='text-gray-500 text-sm text-center'>Explore some of our recent digital solutions that have helped businesses grow.</p>
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {projects.map((project) => (

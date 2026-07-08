@@ -1,7 +1,7 @@
 
 const FeatureCard = ({ title, description, icon: Icon }) => {
   return (
-    <div className="border border-gray-200 p-4 rounded-2xl flex flex-col items-center justify-between">
+    <div className="border border-gray-300 p-4 rounded-2xl flex flex-col items-center justify-between">
 
      
         <Icon className='text-red-500' size={40} />  
