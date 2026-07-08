@@ -59,8 +59,8 @@ const Navbar = () => {
 
 
             <div
-                className={`dark:bg-slate-800/99 dark:text-gray-300 md:hidden fixed top-15 right-0 w-full h-[55%] bg-slate-100 rounded-b-xl text-slate-900
-                transform transition-all duration-300 ease-in-out z-50
+                className={`dark:bg-slate-800/99 dark:text-gray-300 md:hidden fixed top-15 right-0 w-full h-screen bg-white text-slate-900
+                transform transition-all duration-300 ease-in-out z-50 flex flex-col items-center 
                 ${
                   menuOpen
                     ? "translate-x-0 opacity-100"
@@ -70,26 +70,18 @@ const Navbar = () => {
 
                 {/* Header */}
 
-                <div className="flex justify-between items-center">
+                {/* <div className="flex justify-between items-center">
 
-                </div>
+                </div> */}
 
                 {/* Links */}
 
-                <div className="flex flex-col px-5 font-medium gap-5 mt-5">
-
-                  <Link
-                    to="/"
-                    onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-lg hover:text-gray-500 transition"
-                  >
-                    Home
-                  </Link>
+                <div className="flex flex-col px-5 font-sans gap-5 mt-15">
 
                   <Link
                     to="/about"
                     onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-lg hover:text-gray-500 transition"
+                    className="border-gray-200 text-xl hover:text-gray-500 transition"
                   >
                     About
                   </Link>
@@ -97,7 +89,7 @@ const Navbar = () => {
                   <Link
                     to="/services"
                     onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-lg hover:text-gray-500 transition"
+                    className="border-gray-200 text-xl hover:text-gray-500 transition"
                   >
                     Services
                   </Link>
@@ -105,7 +97,7 @@ const Navbar = () => {
                   <Link
                     to="/projects"
                     onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-lg hover:text-gray-500 transition"
+                    className="border-gray-200 text-xl hover:text-gray-500 transition"
                   >
                     Projects
                   </Link>
@@ -113,7 +105,7 @@ const Navbar = () => {
                   <Link
                     to="/blog"
                     onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-lg hover:text-gray-500 transition"
+                    className="border-gray-200 text-xl hover:text-gray-500 transition"
                   >
                     Blog
                   </Link>
@@ -121,7 +113,7 @@ const Navbar = () => {
                   <Link
                     to="/contact"
                     onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-lg hover:text-gray-500 transition"
+                    className="border-gray-200 text-xl hover:text-gray-500 transition"
                   >
                     Contact
                   </Link>
@@ -130,7 +122,7 @@ const Navbar = () => {
 
                 {/* Button */}
 
-                <div className="px-4 mt-3">
+                <div className="px-4 mt-8">
 
                   <Link to="/projects" onClick={() => setMenuOpen(false)}>
 
@@ -145,6 +137,7 @@ const Navbar = () => {
                 </div>
 
               </div>
+
     </nav>
   )
 }
