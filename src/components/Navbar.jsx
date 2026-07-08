@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useState, useContext } from 'react'
-import logo from '../assets/images/Logo.png'
+import Logo from '../assets/images/Logo.png'
 import { Menu, X, House, Info, CircleUserRound, Moon, Sun   } from 'lucide-react'
 import { ThemeContext } from "../context/ThemeContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,7 +16,7 @@ const Navbar = () => {
       
 
         <Link to='/'>
-        <img src={logo} alt="Logo" className='h-9 dark:invert' />
+        <img src={Logo} alt="Logo" className='h-9 dark:invert' />
         </Link>
 
         {/* Desktop links for navbar */}
