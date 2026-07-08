@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useState, useContext } from 'react'
 import Logo from '../assets/images/Logo.png'
 import { Menu, X, House, Info, CircleUserRound, Moon, Sun   } from 'lucide-react'
