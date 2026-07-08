@@ -81,7 +81,7 @@ const Navbar = () => {
                   <Link
                     to="/about"
                     onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-xl hover:text-gray-500 transition"
+                    className="border-gray-200 text-2xl hover:text-gray-500 transition"
                   >
                     About
                   </Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
                   <Link
                     to="/services"
                     onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-xl hover:text-gray-500 transition"
+                    className="border-gray-200 text-2xl hover:text-gray-500 transition"
                   >
                     Services
                   </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
                   <Link
                     to="/projects"
                     onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-xl hover:text-gray-500 transition"
+                    className="border-gray-200 text-2xl hover:text-gray-500 transition"
                   >
                     Projects
                   </Link>
@@ -105,7 +105,7 @@ const Navbar = () => {
                   <Link
                     to="/blog"
                     onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-xl hover:text-gray-500 transition"
+                    className="border-gray-200 text-2xl hover:text-gray-500 transition"
                   >
                     Blog
                   </Link>
@@ -113,7 +113,7 @@ const Navbar = () => {
                   <Link
                     to="/contact"
                     onClick={() => setMenuOpen(false)}
-                    className="border-gray-200 text-xl hover:text-gray-500 transition"
+                    className="border-gray-200 text-2xl hover:text-gray-500 transition"
                   >
                     Contact
                   </Link>
