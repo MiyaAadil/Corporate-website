@@ -1,11 +1,17 @@
-import React from 'react'
+import BlogHero from "../components/BlogHero";
+import BlogSection from "../components/BlogSection";
+import Newsletter from "../components/Newsletter";
+import CTA from "../components/CTA";
 
 const Blog = () => {
   return (
-    <div>
-      This is blog page
-    </div>
-  )
-}
+    <>
+      <BlogHero />
+      <BlogSection />
+      <Newsletter />
+      <CTA />
+    </>
+  );
+};
 
-export default Blog
+export default Blog;

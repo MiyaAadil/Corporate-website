@@ -1,11 +1,17 @@
-import React from 'react'
+import ContactHero from "../components/ContactHero";
+import ContactSection from "../components/ContactSection";
+import GoogleMap from "../components/GoogleMap";
+import CTA from "../components/CTA";
 
 const Contact = () => {
   return (
-    <div>
-      This is contact page
-    </div>
-  )
-}
+    <>
+      <ContactHero />
+      <ContactSection />
+      <GoogleMap />
+      <CTA />
+    </>
+  );
+};
 
-export default Contact
+export default Contact;

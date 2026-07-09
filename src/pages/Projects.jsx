@@ -1,11 +1,15 @@
-import React from 'react'
+import ProjectsHero from "../components/ProjectsHero";
+import ProjectSection from "../components/ProjectSection";
+import CTA from "../components/CTA";
 
 const Projects = () => {
   return (
-    <div>
-      This is projects page
-    </div>
-  )
-}
+    <>
+      <ProjectsHero />
+      <ProjectSection />
+      <CTA />
+    </>
+  );
+};
 
-export default Projects
+export default Projects;
