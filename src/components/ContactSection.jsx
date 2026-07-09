@@ -1,3 +1,5 @@
+import toast from 'react-hot-toast'
+import { useState } from 'react'
 import {
   Mail,
   Phone,
@@ -6,6 +8,29 @@ import {
 } from "lucide-react";
 
 const ContactSection = () => {
+
+  const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+})
+
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+      if (!formData.name || !formData.email || !formData.message) {
+        toast.error("Please fill all fields")
+        return
+      }
+      toast.success("Message sent successfully!")
+      setFormData({name:"", email:"", subject:"", message:""})
+    
+  }
+
   return (
     <section className="max-w-7xl mx-auto px-6 py-15">
 
@@ -19,37 +44,51 @@ const ContactSection = () => {
             Send us a Message
           </h2>
 
-          <div className="space-y-5 mt-8">
+          <form onSubmit={handleSubmit} className="space-y-5 mt-8">
 
             <input
               type="text"
+              name='name'
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Your Name"
               className="w-full border dark:border-slate-700 p-4 rounded-xl bg-transparent"
             />
 
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Email Address"
               className="w-full border dark:border-slate-700 p-4 rounded-xl bg-transparent"
             />
 
             <input
               type="text"
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
               placeholder="Subject"
               className="w-full border dark:border-slate-700 p-4 rounded-xl bg-transparent"
             />
 
             <textarea
               rows="6"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Your Message"
               className="w-full border dark:border-slate-700 p-4 rounded-xl bg-transparent"
             />
 
-            <button className="bg-blue-950 hover:bg-blue-900 text-white px-8 py-4 rounded-xl transition cursor-pointer">
+            <button className="bg-blue-950 hover:bg-blue-900 text-white px-8 py-4 rounded-xl transition cursor-pointer"
+            type='submit'
+            >
               Send Message
             </button>
 
-          </div>
+          </form>
 
         </div>
 
