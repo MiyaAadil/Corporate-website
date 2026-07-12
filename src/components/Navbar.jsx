@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { useState, useContext } from 'react'
 import Logo from '../assets/images/Logo.png'
 import { Menu, X, House, Info, CircleUserRound, Moon, Sun  } from 'lucide-react'
+import { motion } from 'framer-motion'
 import { ThemeContext } from "../context/ThemeContext";
 import { navLinks } from '../data/navLinks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

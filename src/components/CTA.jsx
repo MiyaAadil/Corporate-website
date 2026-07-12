@@ -1,9 +1,24 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const CTA = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-7">
+    <motion.section
+    initial={{
+    scale: 0.9,
+    opacity: 0,
+      }}
+      whileInView={{
+        scale: 1,
+        opacity: 1,
+      }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.6,
+      }}
+      
+    className="max-w-7xl mx-auto px-6 py-7">
 
       <div className="relative overflow-hidden rounded-3xl bg-linear-to-r from-slate-900 via-blue-900 to-slate-900 px-8 py-16 text-center shadow-2xl">
 
@@ -41,7 +56,7 @@ const CTA = () => {
 
       </div>
 
-    </section>
+    </motion.section>
   );
 };
 

@@ -5,19 +5,31 @@ import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
-    <div className='p-5 dark:text-white
+    <motion.div
+    initial={{ opacity: 0, y: 60 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{
+    duration: 0.8,
+    ease: "easeOut",
+  }}
+    className='p-5 dark:text-white
                     lg:max-w-7xl lg:mx-auto'>
 
       {/* Bigger heading and a CTA */}
       <div className='flex flex-col gap-3'>
 
-        <motion.h1 className='text-4xl lg:text-6xl text-blue-950 font-bold uppercase leading-none dark:text-gray-300' initial={{ opacity: 0, y: 20 }}
+        <motion.h1 className='text-4xl lg:text-6xl text-blue-950 font-bold uppercase leading-none dark:text-gray-300'
+
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}>Inspired by you <br /> built for the future</motion.h1>
+        transition={{ delay:0.2, duration: 0.7 }}>Building Digital Solutions</motion.h1>
 
         <p className='text-sm text-gray-500 dark:text-gray-300'>We help businesses build innovative digital solutions that accelerate growth, improve efficiency, and create lasting impact.</p>
 
-        <button className='bg-gray-900 dark:bg-gray-800 px-3 py-3 rounded-xl text-white w-40 cursor-pointer'>Get started</button>
+        <motion.button
+        whileHover={{scale: 1.05,}}
+        whileTap={{scale: 0.95,}}
+        className='bg-gray-900 dark:bg-gray-800 px-3 py-3 rounded-xl text-white w-40 cursor-pointer'>Get started</motion.button>
 
       </div>
 
@@ -57,7 +69,7 @@ const Hero = () => {
         </motion.div>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 

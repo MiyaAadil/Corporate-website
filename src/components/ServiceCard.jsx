@@ -1,7 +1,11 @@
+import { motion } from "framer-motion";
 
 const ServiceCard = ({title, description, icon}) => {
   return (
-    <div className='h-80 rounded-2xl shadow-md hover:shadow-3xl transition-all duration-300 hover:-translate-y-2 cursor-pointer  overflow-hidden border border-gray-300 dark:bg-slate-800'>
+    <motion.div
+    whileHover={{ y: -8, }}
+    transition={{ duration: 0.3 }}
+    className='h-80 rounded-2xl shadow-md hover:shadow-3xl transition-all duration-300 hover:-translate-y-2 cursor-pointer  overflow-hidden border border-gray-300 dark:bg-slate-800'>
       
       <img className='h-40 w-full object-cover p-2 rounded-2xl' src={icon} alt="" />
 
@@ -10,7 +14,7 @@ const ServiceCard = ({title, description, icon}) => {
         <p className='text-sm text-center'>{description}</p>
         <button className='bg-slate-950 dark:bg-gray-900 hover:bg-gray-900 text-white cursor-pointer p-2 rounded-full w-35'>Learn more</button>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
