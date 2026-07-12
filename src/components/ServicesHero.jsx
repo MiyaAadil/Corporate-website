@@ -1,4 +1,4 @@
-import hero from "../assets/images/services-hero.jpg";
+import hero from "../assets/images/services-hero.png";
 import { motion } from "framer-motion";
 
 const ServicesHero = () => {

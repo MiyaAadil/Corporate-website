@@ -1,5 +1,4 @@
-import Corporate from '../assets/images/corporate.jpg'
-import Tech from '../assets/images/tech.jpg'
+import Tech from '../assets/images/tech.png'
 
 import { motion } from 'framer-motion'
 
@@ -18,7 +17,7 @@ const Hero = () => {
       {/* Bigger heading and a CTA */}
       <div className='flex flex-col gap-3'>
 
-        <motion.h1 className='text-4xl lg:text-6xl text-blue-950 font-bold uppercase leading-none dark:text-gray-300'
+        <motion.h1 className='text-4xl lg:text-6xl font-bold uppercase leading-none dark:text-gray-300'
 
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

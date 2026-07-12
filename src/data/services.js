@@ -1,8 +1,8 @@
 import Webdev from '../assets/images/web-dev.jpg'
-import Ai from '../assets/images/ai.jpg'
-import App from '../assets/images/app.jpg'
+import Ai from '../assets/images/ai.png'
+import App from '../assets/images/app.png'
 import Cloud from '../assets/images/cloud.jpg'
-import Cyber from '../assets/images/cyber.jpg'
+import Cyber from '../assets/images/cyber.png'
 import Ui from '../assets/images/ui.jpg'
 
 export const services = [

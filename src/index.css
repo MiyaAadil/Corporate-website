@@ -9,3 +9,18 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, and Opera */
 }
+
+
+#nprogress .bar {
+  background: #16086f !important;
+  height: 4px !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #16086f,
+              0 0 5px #16086f;
+}
+
+#nprogress .spinner {
+  display: none;
+}

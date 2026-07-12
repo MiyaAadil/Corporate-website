@@ -1,7 +1,7 @@
-import Person1 from "../assets/images/Person1.jpg";
-import Person2 from "../assets/images/Person2.jpg";
-import Person3 from "../assets/images/Person3.jpg";
-import Person4 from "../assets/images/Person4.jpg";
+import Person1 from "../assets/images/Person1.png";
+import Person2 from "../assets/images/Person2.png";
+import Person3 from "../assets/images/Person3.png";
+import Person4 from "../assets/images/Person4.png";
 
 export const team = [
   {

@@ -1,4 +1,4 @@
-import storyImage from "../assets/images/story.jpg";
+import storyImage from "../assets/images/story.png";
 import { CheckCircle } from "lucide-react";
 
 const OurStory = () => {
