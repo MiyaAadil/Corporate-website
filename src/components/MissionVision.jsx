@@ -1,4 +1,5 @@
 import { Target, Eye } from "lucide-react";
+import { motion } from "framer-motion";
 
 const MissionVision = () => {
   return (
@@ -26,7 +27,12 @@ const MissionVision = () => {
 
       {/* Cards */}
 
-      <div className="grid md:grid-cols-2 gap-8 mt-16">
+      <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="grid md:grid-cols-2 gap-8 mt-16">
 
         {/* Mission */}
 
@@ -78,7 +84,7 @@ const MissionVision = () => {
 
         </div>
 
-      </div>
+      </motion.div>
 
     </section>
   );
